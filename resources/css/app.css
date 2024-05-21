@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .swal-btn {
+    @apply py-2 px-8 rounded border border-blue-green mx-1 text-lake-green font-JhengHei tracking-wide
+  }
+}
+
+/* 服務頁swiper按鈕樣式 */
+.swiper-button-prev, .swiper-button-next{
+  top: 33% !important;
+  @apply z-20 p-10 bg-[#363636] rounded-full hover:opacity-95 mr-0 ;
+  @media screen and (max-width:1270px){
+    display: none !important;
+  };
+}
+.swiper-button-prev{
+  transform: translateX(-45px);
+}
+.swiper-button-next{
+  transform: translateX(45px);
+}
+.swiper-button-prev::after{
+  color: #f4f4f4 !important;
+  transform: translateX(12px);
+  font-size: 24px !important;
+  font-weight: 300 !important;
+}
+.swiper-button-next::after{
+  color: #f4f4f4 !important;
+  transform: translateX(-12px);
+  font-size: 24px !important;
+  font-weight: 300 !important;
+}
+.disabled_swiper_button {
+  display: none !important;
+  cursor: auto;
+  pointer-events: none;
+}
+/* 滑動到頂部 */
+html {
+  scroll-behavior: smooth;
+}

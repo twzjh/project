@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.autoSave": "afterDelay",
+  "files.eol": "\n",
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "[blade]": {
+    "editor.tabSize": 2,
+  },
+  "[php]": {
+    "editor.tabSize": 4,
+  },
+}
